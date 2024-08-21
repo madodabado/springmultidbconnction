@@ -9,7 +9,7 @@ import jakarta.persistence.*;
 public class Account {
 
     @Id
-    private Integer id;
+    private Integer account_id;
     private String account_holder;
     private String address;
     private String available_balance;
@@ -18,11 +18,11 @@ public class Account {
     private int bank_id;
 
     public Integer getId() {
-        return id;
+        return account_id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setId(Integer account_id) {
+        this.account_id = account_id;
     }
 
     public String getAccount_holder() {
